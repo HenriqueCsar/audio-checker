@@ -11,6 +11,7 @@ stream=p.open(format=pyaudio.paInt16,channels=1,rate=RATE,input=True,
 result=[]
 while True:
     result.clear()
+   #pasta
     for video in glob.glob('*.dav'):
         print(video)
         os.system(f'start {video}')
