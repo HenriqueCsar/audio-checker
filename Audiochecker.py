@@ -5,6 +5,7 @@ from datetime import datetime
 CHUNK = 2**11
 RATE = 44100
 
+#Inicio Process
 p=pyaudio.PyAudio()
 stream=p.open(format=pyaudio.paInt16,channels=1,rate=RATE,input=True,
               frames_per_buffer=CHUNK)
